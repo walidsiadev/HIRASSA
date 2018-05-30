@@ -20,7 +20,21 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+		/**
+		*hade 3 darori idaro
+		*/
 		$this->load->helper('url');
+		$this->load->view('header');
+		$this->load->view('mid');
+
+		/**
+		*hade howa cours diale app hena ghedema 
+		*/
 		$this->load->view('home');
+
+		/**
+		*hade darori idare
+		*/
+		$this->load->view('footer');
 	}
 }
