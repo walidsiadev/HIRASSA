@@ -2,8 +2,8 @@
     <div id="page-inner">
         <div class="row">
             <div class="col-md-12">
-                <h2>Blank Page</h2>   
-                <h5>Welcome Jhon Deo , Love to see you back. </h5>
+                <h2> Tableau de bord</h2>   
+                <h5>Welcome to home </h5>
             </div>
         </div>
         <hr />
