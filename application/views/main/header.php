@@ -21,7 +21,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">HIRASSA</a> 
+                <a class="navbar-brand" href="<?php echo base_url('Pages');?>">HIRASSA</a> 
             </div>
         <div style="color: white;
               padding: 15px 50px 5px 50px;
@@ -45,9 +45,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     </li>
                     <li>
                         <a class="<?php if($this->uri->segment(2) == 'Exam') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Exam');?>"><i class="fa fa-qrcode fa-3x"></i> Les Examens & Planification</a>
-                    </li>
-						   <li  >
-                        <a class="<?php if($this->uri->segment(2) == 'lol') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/lol');?>"><i class="fa fa-bar-chart-o fa-3x"></i> Morris Charts</a>
                     </li>	            
                     <li>
                         <a><i class="fa fa-university fa-3x"></i> École<span class="fa arrow"></span></a>
@@ -62,10 +59,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <a class="<?php if($this->uri->segment(2) == 'Villes') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Villes');?>"> les Villes</a>
                             </li>
                             <li>
-                                <a class="<?php if($this->uri->segment(2) == 'Salle') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Salle');?>"> Les Salle</a>
+                                <a class="<?php if($this->uri->segment(2) == 'Salle') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Salle');?>"> Les Salles</a>
                             </li>
                             <li>
-                                <a class="<?php if($this->uri->segment(2) == 'Matieres') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Matieres');?>"> les Matières</a>
+                                <a class="<?php if($this->uri->segment(2) == 'Matieres') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Matieres');?>"> Les Matières</a>
                             </li>
                         </ul>
                       </li>  
