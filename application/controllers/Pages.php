@@ -14,154 +14,56 @@ class Pages extends CI_Controller
 
     public function Index()
     {
-        $data['title'] = 'Bienvenue sur HIRASSA';
-        /**
-        *hade darori idare
-        */
-        $this->load->view('main/header', $data);
-        /**
-        *hade howa cours diale app hena ghedema
-        */
-        $this->load->view('main/home');
-        /**
-        *hade darori idare
-        */
-        $this->load->view('main/footer');
+        $data = null;
+        $this->template_lib->load_template('main/home','Bienvenue sur HIRASSA',$data);
     }
     
     public function prof()
     {
-        $data['title'] = 'HIRASSA | Professeur';
-        /**
-        *hade 3 darori idaro
-        */
-        $this->load->view('main/header', $data);
-        /**
-        *hade howa cours diale app hena ghedema
-        */
-        $this->load->view('prof/prof_v');
-        /**
-        *hade darori idare
-        */
-        $this->load->view('main/footer');
+        $this->load->model('profs/Profs_model');
+        $data['profs'] = $this->Profs_model->getAllprofs();
+        $this->template_lib->load_template('prof/prof_v','HIRASSA | Professeur',$data);
     }
 
     public function Exam()
     {
-        $data['title'] = 'HIRASSA | Les Examens & Planification';
-        /**
-        *hade 3 darori idaro
-        */
-        $this->load->view('main/header', $data);
-        /**
-        *hade howa cours diale app hena ghedema
-        */
-        $this->load->view('Exam/exam_v');
-        /**
-        *hade darori idare
-        */
-        $this->load->view('main/footer');
+        $data = null;
+        $this->template_lib->load_template('Exam/exam_v','HIRASSA | Les Examens & Planification',$data);
     }
 
     public function Ecole()
     {
-        $data['title'] = 'HIRASSA | L\'École';
-        /**
-        *hade 3 darori idaro
-        */
-        $this->load->view('main/header', $data);
-        /**
-        *hade howa cours diale app hena ghedema
-        */
-        $this->load->view('Ecole/ecole_v');
-        /**
-        *hade darori idare
-        */
-        $this->load->view('main/footer');
+        $data = null;
+        $this->template_lib->load_template('Ecole/ecole_v','HIRASSA | L\'École',$data);
 	}
 	
 	public function Prefect()
     {
-        $data['title'] = 'HIRASSA | La Préfecture';
-        /**
-        *hade 3 darori idaro
-        */
-        $this->load->view('main/header', $data);
-        /**
-        *hade howa cours diale app hena ghedema
-        */
-        $this->load->view('Prefect/prefect_v');
-        /**
-        *hade darori idare
-        */
-        $this->load->view('main/footer');
+        $data = null;
+        $this->template_lib->load_template('Prefect/prefect_v','HIRASSA | La Préfecture',$data);
 	}
 	
 	public function Villes()
     {
-        $data['title'] = 'HIRASSA | Les Villes';
-        /**
-        *hade 3 darori idaro
-        */
-        $this->load->view('main/header', $data);
-        /**
-        *hade howa cours diale app hena ghedema
-        */
-        $this->load->view('Villes/villes_v');
-        /**
-        *hade darori idare
-        */
-        $this->load->view('main/footer');
+        $data = null;
+        $this->template_lib->load_template('Villes/villes_v','HIRASSA | Les Villes',$data);
 	}
 
 	public function Salle()
     {
-        $data['title'] = 'HIRASSA | Les Salles';
-        /**
-        *hade 3 darori idaro
-        */
-        $this->load->view('main/header', $data);
-        /**
-        *hade howa cours diale app hena ghedema
-        */
-        $this->load->view('Salle/salle_v');
-        /**
-        *hade darori idare
-        */
-        $this->load->view('main/footer');
+        $data = null;
+        $this->template_lib->load_template('Salle/salle_v','HIRASSA | Les Salles',$data);
 	}
 	
 	public function Matieres()
     {
-        $data['title'] = 'HIRASSA | les Matières';
-        /**
-        *hade 3 darori idaro
-        */
-        $this->load->view('main/header', $data);
-        /**
-        *hade howa cours diale app hena ghedema
-        */
-        $this->load->view('Matieres/matieres_v');
-        /**
-        *hade darori idare
-        */
-        $this->load->view('main/footer');
+        $data = null;
+        $this->template_lib->load_template('Matieres/matieres_v','HIRASSA | les Matières',$data);
 	}
 
 	public function Admin()
     {
-        $data['title'] = 'HIRASSA | les Admins';
-        /**
-        *hade 3 darori idaro
-        */
-        $this->load->view('main/header', $data);
-        /**
-        *hade howa cours diale app hena ghedema
-        */
-        $this->load->view('Admin/admins_v');
-        /**
-        *hade darori idare
-        */
-        $this->load->view('main/footer');
+        $data = null;
+        $this->template_lib->load_template('Admin/admins_v','HIRASSA | les Admins',$data);
 	}
 }
