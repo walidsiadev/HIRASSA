@@ -41,33 +41,33 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <a class="<?php if($this->uri->segment(1) == 'Pages' && $this->uri->segment(2) == '') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages');?>"><i class="fa fa-tachometer fa-3x"></i> Tableau de bord</a>
                     </li>
                       <li>
-                        <a class="<?php if($this->uri->segment(2) == 'Prof') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Prof');?>"><i class="fa fa-graduation-cap fa-3x"></i> Professeur</a>
+                        <a class="<?php if($this->uri->segment(2) == 'Prof' || $this->uri->segment(1) == 'Prof') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Prof');?>"><i class="fa fa-graduation-cap fa-3x"></i> Professeur</a>
                     </li>
                     <li>
-                        <a class="<?php if($this->uri->segment(2) == 'Exam') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Exam');?>"><i class="fa fa-qrcode fa-3x"></i> Les Examens & Planification</a>
+                        <a class="<?php if($this->uri->segment(2) == 'Exam' || $this->uri->segment(1) == 'Exam') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Exam');?>"><i class="fa fa-qrcode fa-3x"></i> Les Examens & Planification</a>
                     </li>	            
                     <li>
                         <a><i class="fa fa-university fa-3x"></i> École<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a class="<?php if($this->uri->segment(2) == 'Ecole') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Ecole');?>"> L'École</a>
+                                <a class="<?php if($this->uri->segment(2) == 'Ecole' || $this->uri->segment(1) == 'Ecole') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Ecole');?>"> L'École</a>
                             </li>
                             <li>
-                                <a class="<?php if($this->uri->segment(2) == 'Prefect') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Prefect');?>"> La Préfecture</a>
+                                <a class="<?php if($this->uri->segment(2) == 'Prefect' || $this->uri->segment(1) == 'Prefect') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Prefect');?>"> La Préfecture</a>
                             </li>
                             <li>
-                                <a class="<?php if($this->uri->segment(2) == 'Villes') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Villes');?>"> les Villes</a>
+                                <a class="<?php if($this->uri->segment(2) == 'Villes' || $this->uri->segment(1) == 'Villes') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Villes');?>"> les Villes</a>
                             </li>
                             <li>
-                                <a class="<?php if($this->uri->segment(2) == 'Salle') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Salle');?>"> Les Salles</a>
+                                <a class="<?php if($this->uri->segment(2) == 'Salle' || $this->uri->segment(1) == 'Salle') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Salle');?>"> Les Salles</a>
                             </li>
                             <li>
-                                <a class="<?php if($this->uri->segment(2) == 'Matieres') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Matieres');?>"> Les Matières</a>
+                                <a class="<?php if($this->uri->segment(2) == 'Matieres' || $this->uri->segment(1) == 'Matieres') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Matieres');?>"> Les Matières</a>
                             </li>
                         </ul>
                       </li>  
                     <li>
-                        <a class="<?php if($this->uri->segment(2) == 'Admin') echo 'active-menu'; else echo ''; ?>"  href="<?php echo base_url('Pages/Admin');?>"><i class="fa fa-address-card fa-3x"></i> Administration</a>
+                        <a class="<?php if($this->uri->segment(2) == 'Admin' || $this->uri->segment(1) == 'Admin') echo 'active-menu'; else echo ''; ?>"  href="<?php echo base_url('Pages/Admin');?>"><i class="fa fa-address-card fa-3x"></i> Administration</a>
                     </li>	
             </ul>
                
