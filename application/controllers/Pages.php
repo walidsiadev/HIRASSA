@@ -39,7 +39,8 @@ class Pages extends CI_Controller
 	
 	public function Prefect()
     {
-        $data = null;
+        $this->load->model('prefectures/Prefectures_model');
+        $data['prefect'] = $this->Prefectures_model->getallprefect();
         $this->template_lib->load_template('Prefect/prefect_v','HIRASSA | La Préfecture',$data);
 	}
 	
