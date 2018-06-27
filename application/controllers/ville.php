@@ -32,27 +32,21 @@ class ville extends CI_Controller
     public function Update()
     {
         $id = $this->uri->segment(3);
-        $this->load->model('profs/Profs_model');
-        $this->load->model('matieres/Matieres_model');
-        $data['matieres'] = $this->Matieres_model->getAllmatieres();
-        $data['profs'] = $this->Profs_model->getAllprofsWhere($id);
+        $this->load->model('villes/Villes_model');
+        $data['ville'] = $this->Villes_model->getAllvilWhere($id);
         if ($this->input->post('Update')) {
-            $data['profs'] = null;
+            $data['ville'] = null;
             $upd = array(
-                'prof_matr' => $this->input->post('prof_matr'),
-                'prof_nom' => $this->input->post('prof_nom'),
-                'prof_prenom' => $this->input->post('prof_prenom'),
-                'prof_email' => $this->input->post('prof_email'),
-                'mt_id' => $this->input->post('mt_id')
+                'v_nom' => $this->input->post('v_nom')
             );
-            $this->Profs_model->UpdateProf($id,$upd);
-            $data['ok'] = 'Professuer a été modifier avec succès';
-            $data['profs'] = $this->Profs_model->getAllprofsWhere($id);
-            $this->template_lib->load_template('prof/prof_update','HIRASSA | Modifier Professeur',$data);
+            $this->Villes_model->Updateville($id,$upd);
+            $data['ok'] = 'ville a été modifier avec succès';
+            $data['ville'] = $this->Villes_model->getAllvilWhere($id);
+            $this->template_lib->load_template('Villes/villes_update','HIRASSA | Modifier la Ville',$data);
         }
         else {
             $data['ok'] = null;
-            $this->template_lib->load_template('prof/prof_update','HIRASSA | Modifier Professeur',$data);
+            $this->template_lib->load_template('Villes/villes_update','HIRASSA | Modifier la Ville',$data);
         }
     }
 }

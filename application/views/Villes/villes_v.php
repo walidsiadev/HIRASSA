@@ -34,7 +34,7 @@
                          <th scope="row"><?php echo $a;?></th>
                          <td><?php echo $vil->v_nom; ?></td>
                          <td style="float: right;">
-                             <a class="btn btn-warning" href="*" role="button">
+                             <a class="btn btn-warning" href="<?php echo base_url('ville/Update/'.$vil->v_id);?>" role="button">
                                  <span class="fa fa-pencil-square-o"> Modifier</span> 
                              </a>
                              <a class="btn btn-danger" href="<?php echo base_url('ville/Delete/'.$vil->v_id);?>" role="button">
