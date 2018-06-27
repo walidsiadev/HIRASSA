@@ -46,7 +46,8 @@ class Pages extends CI_Controller
 	
 	public function Villes()
     {
-        $data = null;
+        $this->load->model('villes/Villes_model');
+        $data['vill'] = $this->Villes_model->getallvil();
         $this->template_lib->load_template('Villes/villes_v','HIRASSA | Les Villes',$data);
 	}
 
