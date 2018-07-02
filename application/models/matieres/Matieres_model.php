@@ -30,8 +30,32 @@ class Matieres_model extends CI_Model
             return true;
         }
         return false;
+
+        /**
+     * fonction qui retourne la ligne de la table porte le méme id 
+     * @returne Mixte 
+     */
+    /* function getAllvilWhere ($id){
+        $q = $this->db->get_where('villes',array('v_id' =>$id));
+        return $q->result(); */
+
+
+
 }
+function getAllmatiereWhere ($id){
+    $q = $this->db->get_where('matieres',array('mt_id' =>$id));
+    return $q->result();
 
 
     
+}
+  /**
+     * fonction de modification des villes
+     * @returne Mixte 
+     */
+    function Updatematiere ($id,$data){
+        $this->db->where('mt_id',$id);
+        $this->db->update('matieres',$data);
+        return true;
+    }
 }
