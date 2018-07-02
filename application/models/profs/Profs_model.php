@@ -25,7 +25,7 @@ class Profs_model extends CI_Model
         $this->db->insert('profs',$data);
     }
     /**
-     * fonction qui supprime un professeurs dans la table 
+     * fonction qui supprime un professeurs dans la base 
      * @returne bool
      */
     function deleteprofs ($id){
