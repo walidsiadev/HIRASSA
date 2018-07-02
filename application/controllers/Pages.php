@@ -60,7 +60,8 @@ class Pages extends CI_Controller
 	
 	public function Matieres()
     {
-        $data = null;
+        $this->load->model('matieres/Matieres_model');
+        $data['matier'] = $this->Matieres_model->getAllmatieres();
         $this->template_lib->load_template('Matieres/matieres_v','HIRASSA | les Matières',$data);
 	}
 
