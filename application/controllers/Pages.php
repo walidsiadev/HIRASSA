@@ -33,7 +33,8 @@ class Pages extends CI_Controller
 
     public function Ecole()
     {
-        $data = null;
+        $this->load->model('ecoles/Ecoles_model');
+        $data['ecole'] = $this->Ecoles_model->getAllEcole();
         $this->template_lib->load_template('Ecole/ecole_v','HIRASSA | L\'École',$data);
 	}
 	

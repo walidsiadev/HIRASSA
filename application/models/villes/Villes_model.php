@@ -2,11 +2,12 @@
 
 class Villes_model extends CI_Model
 {
-    /**
-     * foction qui selection les villes
+     /**
+     * fonction qui retourne touts les ligne de la table Ville
+     * @returne Mixte 
      */
-    function getallvil(){
-        $q = $this->db->query('SELECT * FROM villes');
+    function getAllVille (){
+        $q = $this->db->query('select * from villes');
         return $q;
     }
 
