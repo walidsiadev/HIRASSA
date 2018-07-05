@@ -14,7 +14,14 @@ class Pages extends CI_Controller
 
     public function Index()
     {
-        $data = null;
+        $this->load->model('profs/Profs_model');
+        $this->load->model('ecoles/Ecoles_model');
+        $this->load->model('salles/Salles_model');
+        $this->load->model('examens/Examens_model');
+        $data['profs'] = $this->Profs_model->countProfs();
+        $data['ecole'] = $this->Ecoles_model->countEcole();
+        $data['salle'] = $this->Salles_model->countSalle();
+        $data['examen'] = $this->Examens_model->countExam();
         $this->template_lib->load_template('main/home','Bienvenue sur HIRASSA',$data);
     }
     
@@ -27,7 +34,8 @@ class Pages extends CI_Controller
 
     public function Exam()
     {
-        $data = null;
+        $this->load->model('examens/Examens_model');
+        $data['exams'] = $this->Examens_model->getAllexamens();
         $this->template_lib->load_template('Exam/exam_v','HIRASSA | Les Examens & Planification',$data);
     }
 
@@ -54,13 +62,15 @@ class Pages extends CI_Controller
 
 	public function Salle()
     {
-        $data = null;
+        $this->load->model('salles/Salles_model');
+        $data['salle'] = $this->Salles_model->getAllsalles();
         $this->template_lib->load_template('Salle/salle_v','HIRASSA | Les Salles',$data);
 	}
 	
 	public function Matieres()
     {
-        $data = null;
+        $this->load->model('matieres/Matieres_model');
+        $data['matier'] = $this->Matieres_model->getAllmatieres();
         $this->template_lib->load_template('Matieres/matieres_v','HIRASSA | les Matières',$data);
 	}
 

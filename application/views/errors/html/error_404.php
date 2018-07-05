@@ -56,6 +56,7 @@ p {
 </style>
 </head>
 <body>
+	<h1>LOL LOL LOL </h1>
 	<div id="container">
 		<h1><?php echo $heading; ?></h1>
 		<?php echo $message; ?>

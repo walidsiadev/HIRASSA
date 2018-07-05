@@ -50,5 +50,21 @@ class Ecoles_model extends CI_Model
         $this->db->update('ecoles',$data);
         return true;
     }
+    /**
+     * function qui retourne tout les information a utiliser dans la liste des utres table 
+     * @return mixte
+     */
+    function getListforEcole(){
+        $q = $this->db->query('SELECT * FROM ecoles ;');
+        return $q;
+    }
+    /**
+     * fonction qui retourne le nbr des ligne sur la table
+     * @returne Mixte 
+     */
+    function countEcole (){
+        $num = $this->db->count_all_results('ecoles');
+        return $num;
+    }
     
 }

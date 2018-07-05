@@ -52,4 +52,12 @@ class Profs_model extends CI_Model
         $this->db->update('profs',$data);
         return true;
     }
+    /**
+     * fonction qui retourne le nbr des ligne sur la table
+     * @returne Mixte 
+     */
+    function countProfs (){
+        $num = $this->db->count_all_results('profs');
+        return $num;
+    }
 }

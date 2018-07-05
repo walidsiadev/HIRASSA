@@ -21,6 +21,7 @@
                         <tr>
                             <th>#</th>
                             <th>Nom</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <!--Table head-->
