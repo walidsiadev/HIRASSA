@@ -22,6 +22,7 @@
                             <th>Nom de Ecole</th>
                             <th>La Ville</th>
                             <th>La Prefécture</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <!--Table head-->

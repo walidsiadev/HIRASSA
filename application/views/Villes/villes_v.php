@@ -21,7 +21,7 @@
                         <tr>
                             <th>#</th>
                             <th>Nom</th>
-                            
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <!--Table head-->
@@ -33,7 +33,7 @@
                         <tr>
                          <th scope="row"><?php echo $a;?></th>
                          <td><?php echo $vil->v_nom; ?></td>
-                         <td style="float: right;">
+                         <td>
                              <a class="btn btn-warning" href="<?php echo base_url('ville/Update/'.$vil->v_id);?>" role="button">
                                  <span class="fa fa-pencil-square-o"> Modifier</span> 
                              </a>

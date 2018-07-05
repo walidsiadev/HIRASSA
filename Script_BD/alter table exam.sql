@@ -1,0 +1,3 @@
+use hirassa_bd;
+ALTER TABLE examens
+ADD ex_niv VARCHAR(255) CHARACTER SET utf8 DEFAULT NULL;

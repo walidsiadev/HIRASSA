@@ -6,6 +6,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="<?php echo base_url('/public/img/logo7irasa.png'); ?>" />
     <title><?php echo $title; ?></title>
     <link href="<?php echo base_url('/public/css/bootstrap.css'); ?>" rel="stylesheet" />
     <link href="<?php echo base_url('/public/font/css/font-awesome.css'); ?>" rel="stylesheet" />
@@ -62,7 +63,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <a class="<?php if($this->uri->segment(2) == 'Salle' || $this->uri->segment(1) == 'Salle') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Salle');?>"> Les Salles</a>
                             </li>
                             <li>
-                                <a class="<?php if($this->uri->segment(2) == 'Matieres' || $this->uri->segment(1) == 'Matieres') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Matieres');?>"> Les Matières</a>
+                                <a class="<?php if($this->uri->segment(2) == 'Matieres' || $this->uri->segment(1) == 'matiere') echo 'active-menu'; else echo ''; ?>" href="<?php echo base_url('Pages/Matieres');?>"> Les Matières</a>
                             </li>
                         </ul>
                       </li>  

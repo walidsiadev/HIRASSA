@@ -66,12 +66,12 @@ p {
     background-color:#F8F8F8;
 
 }
-   .noti-box {
+.noti-box {
 min-height: 100px;
 padding: 20px;
 }
 
-    .noti-box .icon-box {
+.noti-box .icon-box {
 display: block;
 float: left;
 margin: 0 15px 10px 0;
@@ -86,7 +86,7 @@ font-size: 40px;
     margin: 0 0 3px;
 }
 .main-text {
-    font-size: 25px;
+    font-size: 20px;
     font-weight:600;
 }
 .set-icon {
