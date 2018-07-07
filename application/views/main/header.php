@@ -27,8 +27,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <div style="color: white;
               padding: 15px 50px 5px 50px;
               float: right;
-              font-size: 16px;">Dernier accès: 30 mai 2014 &nbsp; 
-              <a href="#" class="btn btn-primary square-btn-adjust"><span class="fa fa-sign-out"> </span>Déconnexion</a> 
+              font-size: 16px;">
+              <a href="<?php echo base_url('Login/logout');?>" class="btn btn-primary square-btn-adjust"><span class="fa fa-sign-out"> </span>Déconnexion</a> 
         </div>
         </nav>   
            <!-- /. NAV TOP  -->
