@@ -57,7 +57,7 @@
             <div class="jumbotron">
                 <h1>HIRASSA</h1>
                 <p>
-                    HIRASSA et une solution informatique pour les écoles, il expose les différentes fonctionnalités de projet HIRASSA. 
+                    HIRASSA et une solution informatique pour les écoles, il expose les différentes fonctionnalités. 
                     HIRASSA va mettre en place une solution pour gérer le planning des examens ainsi que la distribution des profs et la gestion des sales pour les examens.
                 </p>
                 <p>
